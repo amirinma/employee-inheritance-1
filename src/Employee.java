@@ -1,9 +1,11 @@
 import java.util.Date;
 import static java.lang.System.*;
 
-public class Employee {
+public abstract class Employee {
     private String name;
     private Date hireDate;
+
+    public abstract double getPay();
     public Employee(){
         name = "No name";
         hireDate = new Date(1000, 1, 1);
@@ -45,5 +47,13 @@ public class Employee {
     }
     public boolean equals(Employee otherEmployee){
         return(name.equals(otherEmployee.name) && hireDate.equals(otherEmployee.hireDate));
+    }
+    public boolean samePay(Employee other){
+        if (other == null){
+            System.out.println("Error: null employee object.");
+            System.exit(0);
+        }
+            return (this.getPay() == other.getPay());
+
     }
 }

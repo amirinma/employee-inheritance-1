@@ -12,6 +12,6 @@ public class Main {
         System.out.println(joe);
         System.out.println(Zia);
         System.out.println(Zia.equals(joe));
-        System.out.println(Amanda.getPay());
+        System.out.println(joe.samePay(Zia));
 ;    }
 }
