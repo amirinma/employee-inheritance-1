@@ -13,5 +13,13 @@ public class Main {
         System.out.println(Zia);
         System.out.println(Zia.equals(joe));
         System.out.println(joe.samePay(Zia));
+        OrderedHourlyEmployee Sarah = new OrderedHourlyEmployee();
+        OrderedHourlyEmployee Justin = new OrderedHourlyEmployee();
+        System.out.println("Instance test " + Justin.precedes(Justin));
+        System.out.println("Instance test " + Sarah.precedes(Zia));
+        System.out.println("Instance test " + Justin.precedes(Justin));
+        System.out.println(Sarah.getPay());
+        System.out.println(Justin);
+        System.out.println("testing Employee for git hub");
 ;    }
 }

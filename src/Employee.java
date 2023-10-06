@@ -56,4 +56,5 @@ public abstract class Employee {
             return (this.getPay() == other.getPay());
 
     }
+
 }

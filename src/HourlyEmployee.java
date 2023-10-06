@@ -3,6 +3,12 @@ import java.lang.System.*;
 public class HourlyEmployee extends Employee {
     private double wageRate;
     private double hours;
+
+    public HourlyEmployee(){
+        super();
+        wageRate = 0;
+        hours = 0;
+    }
     public HourlyEmployee(String theName, Date theDate, double theWagesRate, double theHours){
         super(theName, theDate);
         if(theWagesRate >= 0 && theHours >= 0){
